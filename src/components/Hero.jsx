@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="hero-content text-center text-neutral-content">
           <div className="">
             <h1 className="mb-5 text-2xl lg:text-5xl font-bold">
-              The Role of Technology in Revolutionizing Agriculture
+              कृषि लाभ - खेती का कल
             </h1>
             <button className="btn btn-sm btn-success md:btn md:btn-success mr-2 ">
               Get Started
@@ -42,9 +42,7 @@ const Hero = () => {
               Future
             </h1>
             <p className="py-6 text-slate-50">
-              As the demands on modern farmers continue to evolve, technology
-              becomes paramount to minimizing stress while maximizing
-              productivity and achieving farm profitability.
+              We bring information, knowledge methods and profit to the farmers
             </p>
             <button className="btn btn-sm md:btn btn-success md:btn-success">
               Get Started

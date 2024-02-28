@@ -16,7 +16,6 @@ const Home = () => {
           <Services />
           <Crops />
           <Benefits />
-          <Footer />
     </div>
   )
 }

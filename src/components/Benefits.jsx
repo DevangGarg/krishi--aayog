@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-import ReactPlayer from "react-player";
 
 const Benefits = () => {
   return (
@@ -26,7 +25,7 @@ const Benefits = () => {
               </svg>
 
               <div>
-                <h1 className=" font-bold text-3xl">15+</h1>
+                <h1 className=" font-bold text-3xl">1+</h1>
                 <p className=" text-xs font-light">year of experience</p>
               </div>
             </div>
@@ -49,7 +48,7 @@ const Benefits = () => {
 
               <div>
                 <h1 className=" font-bold text-3xl">40+</h1>
-                <p className=" text-xs font-light">Product </p>
+                <p className=" text-xs font-light">happy farmers </p>
               </div>
             </div>
             {/* 3.CLIET  */}
@@ -70,8 +69,8 @@ const Benefits = () => {
               </svg>
 
               <div>
-                <h1 className=" font-bold text-3xl">1M+</h1>
-                <p className=" text-xs font-light">Satisfied Client</p>
+                <h1 className=" font-bold text-3xl">9M+</h1>
+                <p className=" text-xs font-light">Profits Arranged</p>
               </div>
             </div>
 
@@ -92,42 +91,44 @@ const Benefits = () => {
               </svg>
 
               <div>
-                <h1 className=" font-bold text-3xl">20+</h1>
-                <p className=" text-xs font-light">Local Team Member</p>
+                <h1 className=" font-bold text-3xl">200+</h1>
+                <p className=" text-xs font-light">Local Members</p>
               </div>
             </div>
           </div>
 
           {/* RIGHT SECTION */}
           <div className="p-4 w-full">
-            <h1 className=" text-3xl sm:text-5xl font-bold">
+            <h1 className=" text-3xl sm:text-5xl font-bold text-white">
               The Benefits of Choosing Our Expertise
             </h1>
-            <p className="py-6 font-light sm:font-semibold">
+            <p className="py-6 font-light sm:font-semibold text-white">
               As the demands on modern farmers continue to evolve, technology
               becomes paramount to minimizing stress while maximizing
               productivity and achieving farm profitability.
             </p>
-            <button className="btn btn-sm md:btn btn-primary">
-              Get Started
-            </button>
+            {// <button className="btn btn-sm md:btn btn-primary">
+            //   Get Started
+            // </button>
+            }
           </div>
         </div>
       </div>
       {/* YOUTUBE VIDEO */}
-      <div className="p-2 sm:p-4 flex justify-center items-center">
-        <div className="block max-[700px]:hidden">
-          <ReactPlayer controls:true url="https://www.youtube.com/watch?v=f90zh9NRErw" />
-        </div>
-        <div className="block max-[450px]:hidden min-[700px]:hidden">
-          <ReactPlayer controls:true url="https://www.youtube.com/watch?v=f90zh9NRErw" width={400}/>
-        </div>
-        <div className="min-[450px]:hidden">
-          <ReactPlayer controls:true url="https://www.youtube.com/watch?v=f90zh9NRErw" width={300}/>
-        </div>
+      {
+      // <div className="p-2 sm:p-4 flex justify-center items-center">
+      //   <div className="block max-[700px]:hidden">
+      //     <ReactPlayer controls:true url="https://www.youtube.com/watch?v=f90zh9NRErw" />
+      //   </div>
+      //   <div className="block max-[450px]:hidden min-[700px]:hidden">
+      //     <ReactPlayer controls:true url="https://www.youtube.com/watch?v=f90zh9NRErw" width={400}/>
+      //   </div>
+      //   <div className="min-[450px]:hidden">
+      //     <ReactPlayer controls:true url="https://www.youtube.com/watch?v=f90zh9NRErw" width={300}/>
+      //   </div>
         
-        
-      </div>
+      // </div>
+      }
     </div>
   );
 };
