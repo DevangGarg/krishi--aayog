@@ -3,6 +3,7 @@
 import React from "react";
 import bg from "../assets/bg-trator.jpg";
 import crop from "../assets/Rectangle 10.png";
+import qrcode from "../assets/qr-code.png";
 const Hero = () => {
   return (
     <div id="Home">
@@ -16,7 +17,7 @@ const Hero = () => {
         <div className="hero-content text-center text-neutral-content">
           <div className="">
             <h1 className="mb-5 text-2xl lg:text-5xl font-bold">
-              कृषि लाभ - खेती का कल
+              कृषिलाभ - Empowering Agriculture with AI and Expertise
             </h1>
             <button className="btn btn-sm btn-success md:btn md:btn-success mr-2 ">
               Get Started
@@ -27,9 +28,10 @@ const Hero = () => {
           </div>
         </div>
         {/* 3. QR MAGE FOR WHATSAPP */}
-        <div className="absolute mr-auto ml-auto bottom-4 sm:bottom-0 sm:right-0 sm:mr-4 sm:mb-4 w-40 h-40 bg-slate-50 opacity-20 rounded-lg">
-            <img src="" />
-        </div>
+       { // <div className="absolute mr-auto ml-auto bottom-4 sm:bottom-0 sm:right-0 sm:mr-4 sm:mb-4 w-40 h-40 bg-slate-200 opacity-20 rounded-lg">
+        //     <img src={qrcode} />
+        // </div>
+       }
       </div>
       {/* PASSION SECTION  */}
       <div className="hero min-h-screen bg-base-200 md:p-20">
