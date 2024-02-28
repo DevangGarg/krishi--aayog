@@ -20,7 +20,7 @@ const Services = () => {
             <img src={detail} alt="Shoes" className="rounded-xl " />
           </figure>
           <div className="card-body items-center text-center ">
-            <h2 className="card-title">Analyzation and Research of Land</h2>
+            <h2 className="card-title text-white">Analyzation and Research of Land</h2>
           </div>
         </div>
 
@@ -30,7 +30,7 @@ const Services = () => {
             <img src={stats} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center ">
-            <h2 className="card-title">Statistics and Data of crops</h2>
+            <h2 className="card-title text-white">Statistics and Data of crops</h2>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const Services = () => {
             <img src={strategy} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center ">
-            <h2 className="card-title">Guidance for higher yields</h2>
+            <h2 className="card-title text-white">Guidance for higher yields</h2>
           </div>
         </div>
 
@@ -51,7 +51,7 @@ const Services = () => {
             <img src={global} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center ">
-            <h2 className="card-title">Providing market to farmers</h2>
+            <h2 className="card-title text-white">Providing market to farmers</h2>
           </div>
         </div>
       </div>
