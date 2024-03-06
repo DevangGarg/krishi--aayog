@@ -55,7 +55,7 @@ const Crops = () => {
       <h1 className=" text-center text-5xl font-bold mb-16 text-[#3eb6bf]">
         Our Friends
       </h1>
-      <Carousel>
+      <Carousel interval={null}>
         {videoProperties.map((videoObj) => {
           return (
             <Carousel.Item key={videoObj.id}>
