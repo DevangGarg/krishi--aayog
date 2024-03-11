@@ -96,9 +96,9 @@ const steps = [
   {
     id: '3',
     component: (
-      <h1>{random}</h1>
+      <h1>The most suitable crop to grow is: {random}</h1>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: '4',
@@ -133,7 +133,7 @@ const steps = [
         <h1>Best profit months: November, October, September, December, August. Temperature range: 10°C-25°C. Growth period: 70-120 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'onion',
@@ -143,7 +143,7 @@ const steps = [
         <h1>Best profit months: November, December, September, October, August. Temperature range: 13°C-25°C. Growth period: 100-175 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'tomato',
@@ -153,7 +153,7 @@ const steps = [
         <h1>Best profit months: September, August, July, October, June. Temperature range: 18°C-25°C. Growth period: 60-80 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'carrot',
@@ -163,7 +163,7 @@ const steps = [
         <h1>Best profit months: September, October, August, July, June. Temperature range: 10°C-25°C. Growth period: 50-80 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'brinjal',
@@ -173,7 +173,7 @@ const steps = [
         <h1>Best profit months: June, July, August, May, September. Temperature range: 25°C-30°C. Growth period: 100-150 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'garlic',
@@ -183,7 +183,7 @@ const steps = [
         <h1>Best profit months: January, February, December, March, October. Temperature range: 0°C-30°C. Growth period: 120-150 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'ginger',
@@ -193,7 +193,7 @@ const steps = [
         <h1>Best profit months: November, December, September, January, August. Temperature range: 20°C-25°C. Growth period: 180-240 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'green',
@@ -203,7 +203,7 @@ const steps = [
         <h1>Best profit months: August, July, September, June, May. Temperature range: 20°C-30°C. Growth period: 60-90 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'bottle',
@@ -213,7 +213,7 @@ const steps = [
         <h1>Best profit months: May, September, April, June, November. Temperature range: 18°C-30°C. Growth period: 90-120 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'ridge',
@@ -223,7 +223,7 @@ const steps = [
         <h1>Best profit months: December, February, January, November, March. Temperature range: 20°C-30°C. Growth period: 60-90 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'pumpkin',
@@ -233,7 +233,7 @@ const steps = [
         <h1>Best profit months: July, June, May, April, March. Temperature range: 18°C-27°C. Growth period: 90-120 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'peas',
@@ -243,7 +243,7 @@ const steps = [
         <h1>Best profit months: November, October, September, December, August. Temperature range: 13°C-18°C. Growth period: 60-90 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'indian',
@@ -253,7 +253,7 @@ const steps = [
         <h1>Best profit months: December, November, October, March, February. Temperature range: 25°C-30°C. Growth period: 70-90 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'lady',
@@ -263,7 +263,7 @@ const steps = [
         <h1>Best profit months: December, November, January, February, March. Temperature range: 22°C-35°C. Growth period: 50-65 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'capsicum',
@@ -273,7 +273,7 @@ const steps = [
         <h1>Best profit months: May, June, October, July, September. Temperature range: 20°C-25°C. Growth period: 60-90 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'spinach',
@@ -283,7 +283,7 @@ const steps = [
         <h1>Best profit months: August, July, June, May, September. Temperature range: 10°C-24°C. Growth period: 45-60 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'radish',
@@ -293,7 +293,7 @@ const steps = [
         <h1>Best profit months: June, July, August, May, September. Temperature range: 10°C-18°C. Growth period: 30-60 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'sweet',
@@ -303,7 +303,7 @@ const steps = [
         <h1>Best profit months: August, September, July, June, October. Temperature range: 24°C-26°C. Growth period: 100-140 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'taro',
@@ -313,7 +313,7 @@ const steps = [
         <h1>Best profit months: January, February, March, December, November. Temperature range: 21°C-35°C. Growth period: 200-240 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
   {
     id: 'turnip',
@@ -323,8 +323,25 @@ const steps = [
         <h1> Best profit months: September, June, July, April, May. Temperature range: 10°C-20°C. Growth period: 30-60 days.</h1>
       </div>
     ),
-    end: true,
+    trigger: '5',
   },
+  {
+    id: '5',
+    message: 'Would you like to continue the chat?',
+    trigger: '6'
+  },
+  {
+    id: '6',
+    options: [
+      { value: 1, label: 'Yes', trigger: '2'},
+      { value: 2, label: 'No', trigger: '7'}
+    ],
+  },
+  {
+    id: '7',
+    message: 'Thank You for having the chat. Have the great day ahead!',
+    end: true,
+  }
 ];
 
 // Creating our own theme
