@@ -373,7 +373,7 @@ const Home = () => {
         <ChatBot
           // This appears as the header
           // text for the chat bot
-          headerTitle="GeekBot"
+          headerTitle="Krishi Aayog ChatBot"
           steps={steps}
           {...config}
         />
