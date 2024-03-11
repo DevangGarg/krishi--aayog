@@ -27,7 +27,7 @@ import Image17 from '../assets/crops images/image-17.png';
 import Image18 from '../assets/crops images/image-18.png';
 import Image19 from '../assets/crops images/image-19.png';
 import Image20 from '../assets/crops images/image-20.png';
-// import Image21 from '../assets/crops images/image-21.png';
+import Image21 from '../assets/crops images/image-21.png';
 
 
 const vegetables = {
@@ -129,7 +129,7 @@ const steps = [
     id: 'potato',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image1} style={{height: '180px', width: '280px'}} alt="potato" />
+        <img src={Image13} style={{height: '180px', width: '280px'}} alt="potato" />
         <h1>Best profit months: November, October, September, December, August. Temperature range: 10°C-25°C. Growth period: 70-120 days.</h1>
       </div>
     ),
@@ -139,7 +139,7 @@ const steps = [
     id: 'onion',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image2} style={{height: '180px', width: '280px'}} alt="onion" />
+        <img src={Image11} style={{height: '180px', width: '280px'}} alt="onion" />
         <h1>Best profit months: November, December, September, October, August. Temperature range: 13°C-25°C. Growth period: 100-175 days.</h1>
       </div>
     ),
@@ -149,7 +149,7 @@ const steps = [
     id: 'tomato',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image3} style={{height: '180px', width: '280px'}} alt="tomato" />
+        <img src={Image20} style={{height: '180px', width: '280px'}} alt="tomato" />
         <h1>Best profit months: September, August, July, October, June. Temperature range: 18°C-25°C. Growth period: 60-80 days.</h1>
       </div>
     ),
@@ -159,7 +159,7 @@ const steps = [
     id: 'carrot',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image4} style={{height: '180px', width: '280px'}} alt="carrot" />
+        <img src={Image5} style={{height: '180px', width: '280px'}} alt="carrot" />
         <h1>Best profit months: September, October, August, July, June. Temperature range: 10°C-25°C. Growth period: 50-80 days.</h1>
       </div>
     ),
@@ -169,7 +169,7 @@ const steps = [
     id: 'brinjal',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image5} style={{height: '180px', width: '280px'}} alt="brinjal" />
+        <img src={Image3} style={{height: '180px', width: '280px'}} alt="brinjal" />
         <h1>Best profit months: June, July, August, May, September. Temperature range: 25°C-30°C. Growth period: 100-150 days.</h1>
       </div>
     ),
@@ -209,7 +209,7 @@ const steps = [
     id: 'bottle',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image9} style={{height: '180px', width: '280px'}} alt="bottle" />
+        <img src={Image1} style={{height: '180px', width: '280px'}} alt="bottle" />
         <h1>Best profit months: May, September, April, June, November. Temperature range: 18°C-30°C. Growth period: 90-120 days.</h1>
       </div>
     ),
@@ -219,7 +219,7 @@ const steps = [
     id: 'ridge',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image10} style={{height: '180px', width: '280px'}} alt="ridge" />
+        <img src={Image16} style={{height: '180px', width: '280px'}} alt="ridge" />
         <h1>Best profit months: December, February, January, November, March. Temperature range: 20°C-30°C. Growth period: 60-90 days.</h1>
       </div>
     ),
@@ -229,7 +229,7 @@ const steps = [
     id: 'pumpkin',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image11} style={{height: '180px', width: '280px'}} alt="pumpkin" />
+        <img src={Image14} style={{height: '180px', width: '280px'}} alt="pumpkin" />
         <h1>Best profit months: July, June, May, April, March. Temperature range: 18°C-27°C. Growth period: 90-120 days.</h1>
       </div>
     ),
@@ -249,7 +249,7 @@ const steps = [
     id: 'indian',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image13} style={{height: '180px', width: '280px'}} alt="indian" />
+        <img src={Image9} style={{height: '180px', width: '280px'}} alt="indian" />
         <h1>Best profit months: December, November, October, March, February. Temperature range: 25°C-30°C. Growth period: 70-90 days.</h1>
       </div>
     ),
@@ -259,7 +259,7 @@ const steps = [
     id: 'lady',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image14} style={{height: '180px', width: '280px'}} alt="lady" />
+        <img src={Image10} style={{height: '180px', width: '280px'}} alt="lady" />
         <h1>Best profit months: December, November, January, February, March. Temperature range: 22°C-35°C. Growth period: 50-65 days.</h1>
       </div>
     ),
@@ -269,7 +269,7 @@ const steps = [
     id: 'capsicum',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image15} style={{height: '180px', width: '280px'}} alt="capsicum" />
+        <img src={Image4} style={{height: '180px', width: '280px'}} alt="capsicum" />
         <h1>Best profit months: May, June, October, July, September. Temperature range: 20°C-25°C. Growth period: 60-90 days.</h1>
       </div>
     ),
@@ -279,7 +279,7 @@ const steps = [
     id: 'spinach',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image16} style={{height: '180px', width: '280px'}} alt="spinach" />
+        <img src={Image17} style={{height: '180px', width: '280px'}} alt="spinach" />
         <h1>Best profit months: August, July, June, May, September. Temperature range: 10°C-24°C. Growth period: 45-60 days.</h1>
       </div>
     ),
@@ -289,7 +289,7 @@ const steps = [
     id: 'radish',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image17} style={{height: '180px', width: '280px'}} alt="radish" />
+        <img src={Image15} style={{height: '180px', width: '280px'}} alt="radish" />
         <h1>Best profit months: June, July, August, May, September. Temperature range: 10°C-18°C. Growth period: 30-60 days.</h1>
       </div>
     ),
@@ -319,7 +319,7 @@ const steps = [
     id: 'turnip',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image20} style={{height: '180px', width: '280px'}} alt="turnip" />
+        <img src={Image21} style={{height: '180px', width: '280px'}} alt="turnip" />
         <h1> Best profit months: September, June, July, April, May. Temperature range: 10°C-20°C. Growth period: 30-60 days.</h1>
       </div>
     ),
