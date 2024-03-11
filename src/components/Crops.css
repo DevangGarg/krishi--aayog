@@ -28,6 +28,6 @@
     visibility: visible;
 }
 
-img, video {
+.carousel-inner div div video {
     max-width: 50% !important;
 }
