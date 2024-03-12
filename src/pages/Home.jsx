@@ -383,7 +383,7 @@ const Home = () => {
           steps={steps}
           {...config}
           opened={opened}   
-          toggleFloating={toggleFloating}
+          // toggleFloating={toggleFloating}
         />
       </ThemeProvider>
     </div>
