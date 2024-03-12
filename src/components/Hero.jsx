@@ -4,7 +4,8 @@ import React from "react";
 import bg from "../assets/bg-trator.jpg";
 import crop from "../assets/Rectangle 10.png";
 import qrcode from "../assets/qr-code.png";
-const Hero = () => {
+// eslint-disable-next-line react/prop-types
+const Hero = ({toggleFloating,opened}) => {
   return (
     <div id="Home">
       <div
@@ -16,14 +17,11 @@ const Hero = () => {
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="">
-            <h1 className="mb-5 text-2xl lg:text-5xl font-bold">
+            <h1 className="mb-5 text-2xl lg:text-5xl font-bold text-center justify-center">
               कृषिलाभ - What, When, How to Grow and Where to sell to get maximum profits.
             </h1>
-            <button className="btn btn-sm btn-success md:btn md:btn-success mr-2 ">
+            <button className="btn btn-sm btn-success md:btn md:btn-success mr-2 " onClick={() => toggleFloating(!opened)}>
               Get Started
-            </button>
-            <button className="btn btn-outline text-slate-50  no-animation btn-sm md:btn-outline md:btn">
-              Learn more
             </button>
           </div>
         </div>
@@ -46,7 +44,7 @@ const Hero = () => {
             <p className="py-6 text-slate-50">
               We bring information, knowledge methods and profit to the farmers
             </p>
-            <button className="btn btn-sm md:btn btn-success md:btn-success">
+            <button className="btn btn-sm md:btn btn-success md:btn-success" onClick={() => toggleFloating(!opened)}>
               Get Started
             </button>
           </div>

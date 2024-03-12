@@ -53,7 +53,7 @@ const Crops = () => {
   return (
     <div id="Friends" className="bg-base-200 my-12">
       <h1 className=" text-center text-5xl font-bold mb-16 text-[#3eb6bf]">
-        Our Friends
+        Our Friends - 13L+ Profits Arranged
       </h1>
       <Carousel interval={null}>
         {videoProperties.map((videoObj) => {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
@@ -28,6 +28,7 @@ import Image18 from '../assets/crops images/image-18.png';
 import Image19 from '../assets/crops images/image-19.png';
 import Image20 from '../assets/crops images/image-20.png';
 import Image21 from '../assets/crops images/image-21.png';
+import './Home.css';
 
 
 const vegetables = {
@@ -339,7 +340,7 @@ const steps = [
   },
   {
     id: '7',
-    message: 'Thank You for having the chat. Have the great day ahead!',
+    message: 'Thank You for having the chat. Want to know more, please whatsapp on +918770013937,we will contact you in 16 hours.',
     end: true,
   }
 ];
@@ -358,16 +359,21 @@ const theme = {
 
 // Set some properties of the bot
 const config = {
-  floating: true,
+  floating: true
 };
 
 const Home = () => {
+  const [opened, setOpened] = useState(true);
+
+  const toggleFloating = opened => {
+    setOpened(opened);
+  }
   return (
     <div>
       <Navbar />
-      <Hero />
-      <Services />
+      <Hero toggleFloating={toggleFloating} opened={opened}/>
       <Crops />
+      <Services />
       <Benefits />
       <ThemeProvider theme={theme}>
         <ChatBot
@@ -376,6 +382,8 @@ const Home = () => {
           headerTitle="Krishi Aayog ChatBot"
           steps={steps}
           {...config}
+          opened={opened}   
+          toggleFloating={toggleFloating}
         />
       </ThemeProvider>
     </div>

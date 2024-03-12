@@ -25,8 +25,8 @@ const Benefits = () => {
               </svg>
 
               <div>
-                <h1 className=" font-bold text-3xl">1</h1>
-                <p className=" text-xs font-light">year of experience</p>
+                <h1 className=" font-bold text-3xl">500+</h1>
+                <p className=" text-xs font-light">Queries Resolved</p>
               </div>
             </div>
 
@@ -69,7 +69,7 @@ const Benefits = () => {
               </svg>
 
               <div>
-                <h1 className=" font-bold text-3xl">9L+</h1>
+                <h1 className=" font-bold text-3xl">13L+</h1>
                 <p className=" text-xs font-light">Profits Arranged</p>
               </div>
             </div>

@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import logo from "../assets/TEJ-logos.png";
+import logo from "../assets/logo images/logo5.jpeg";
 
 const Footer = () => {
   return (

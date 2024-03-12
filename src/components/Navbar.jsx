@@ -2,7 +2,7 @@
 
 import React from "react";
 import crops from "../assets/crop.svg";
-import logo from "../assets/TEJ-logos.png";
+import logo from "../assets/logo images/logo5.jpeg";
 
 const Navbar = () => {
   return (
