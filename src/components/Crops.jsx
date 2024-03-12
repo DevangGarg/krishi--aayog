@@ -14,7 +14,7 @@ import Vid5 from '../videos/video5.mp4';
 import "bootstrap/dist/css/bootstrap.css";
 import ReactPlayer from "react-player";
 import './Crops.css';
-
+import crop from "../assets/logo images/logo3.jpeg";
 
 const Crops = () => {
   const videoProperties = [
@@ -51,8 +51,8 @@ const Crops = () => {
   ]
 
   return (
-    <div id="Friends" className="bg-base-200 my-12">
-      <h1 className=" text-center text-5xl font-bold mb-16 text-[#3eb6bf]">
+    <div id="Friends" className="bg-base-200">
+      <h1 className=" text-center text-5xl font-bold mb-16 text-[#3eb6bf] pt-8">
         Our Friends - 13L+ Profits Arranged
       </h1>
       <Carousel interval={null}>
@@ -74,6 +74,26 @@ const Crops = () => {
           )
         })}
       </Carousel>
+      {/* PASSION SECTION  */}
+      <div className="hero min-h-screen bg-base-200 md:p-20">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+        <img src={crop} className="w-80 rounded-lg " />
+
+          <div className="text-slate-50 md:p-4">
+            <h1 className=" text-3xl md:text-5xl font-bold justify-center text-center">
+              Our Passion for Agriculture Nurturing Growth and Sustaining the
+              Future
+            </h1>
+            <p className="py-6 text-slate-50 justify-center text-center">
+              We bring information, knowledge methods and profit to the farmers
+            </p>
+            { // <button className="btn btn-sm md:btn btn-success md:btn-success">
+            //   Get Started
+            // </button>
+            }
+          </div>
+        </div>
+      </div>
 
     {  // <div className="flex justify-around flex-wrap gap-8">
       //   {/* CARD components */}

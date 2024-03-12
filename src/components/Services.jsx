@@ -1,10 +1,10 @@
 /** @format */
 
 import React from "react";
-import detail from "../assets/blog.svg";
-import stats from "../assets/content.svg";
-import strategy from "../assets/website.svg";
-import global from "../assets/socialMedia.svg";
+import detail from "../assets/logo images/logo7.jpeg";
+import stats from "../assets/logo images/logo8.jpeg";
+import strategy from "../assets/logo images/logo9.jpeg";
+import global from "../assets/logo images/logo2.jpeg";
 
 const Services = () => {
   return (

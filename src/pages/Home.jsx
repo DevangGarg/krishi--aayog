@@ -363,15 +363,15 @@ const config = {
 };
 
 const Home = () => {
-  const [opened, setOpened] = useState(true);
+  // const [opened, setOpened] = useState(true);
 
-  const toggleFloating = opened => {
-    setOpened(opened);
-  }
+  // const toggleFloating = opened => {
+  //   setOpened(opened);
+  // }
   return (
     <div>
       <Navbar />
-      <Hero toggleFloating={toggleFloating} opened={opened}/>
+      <Hero />
       <Crops />
       <Services />
       <Benefits />
@@ -382,7 +382,7 @@ const Home = () => {
           headerTitle="Krishi Aayog ChatBot"
           steps={steps}
           {...config}
-          opened={opened}   
+          // opened={opened}   
           // toggleFloating={toggleFloating}
         />
       </ThemeProvider>

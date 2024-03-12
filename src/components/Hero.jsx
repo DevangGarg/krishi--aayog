@@ -2,10 +2,8 @@
 
 import React from "react";
 import bg from "../assets/bg-trator.jpg";
-import crop from "../assets/Rectangle 10.png";
 import qrcode from "../assets/qr-code.png";
-// eslint-disable-next-line react/prop-types
-const Hero = ({toggleFloating,opened}) => {
+const Hero = () => {
   return (
     <div id="Home">
       <div
@@ -20,9 +18,10 @@ const Hero = ({toggleFloating,opened}) => {
             <h1 className="mb-5 text-2xl lg:text-5xl font-bold text-center justify-center">
               कृषिलाभ - What, When, How to Grow and Where to sell to get maximum profits.
             </h1>
-            <button className="btn btn-sm btn-success md:btn md:btn-success mr-2 " onClick={() => toggleFloating(!opened)}>
-              Get Started
-            </button>
+            { // <button className="btn btn-sm btn-success md:btn md:btn-success mr-2 " >
+            //   Get Started
+            // </button>
+            }
           </div>
         </div>
         {/* 3. QR MAGE FOR WHATSAPP */}
@@ -30,25 +29,6 @@ const Hero = ({toggleFloating,opened}) => {
         //     <img src={qrcode} />
         // </div>
        }
-      </div>
-      {/* PASSION SECTION  */}
-      <div className="hero min-h-screen bg-base-200 md:p-20">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={crop} className="w-80 rounded-lg " />
-
-          <div className="text-slate-50 md:p-4">
-            <h1 className=" text-3xl md:text-5xl font-bold">
-              Our Passion for Agriculture Nurturing Growth and Sustaining the
-              Future
-            </h1>
-            <p className="py-6 text-slate-50">
-              We bring information, knowledge methods and profit to the farmers
-            </p>
-            <button className="btn btn-sm md:btn btn-success md:btn-success" onClick={() => toggleFloating(!opened)}>
-              Get Started
-            </button>
-          </div>
-        </div>
       </div>
     </div>
   );
