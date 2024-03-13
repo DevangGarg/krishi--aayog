@@ -15,7 +15,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import ReactPlayer from "react-player";
 import './Crops.css';
 import crop from "../assets/logo images/logo3.jpeg";
-import image1 from "../assets/logo images/logo2.jpeg";
+import image1 from "../assets/logo images/logo6.jpeg";
 import image2 from "../assets/logo images/logo4.jpeg";
 
 const Crops = () => {
