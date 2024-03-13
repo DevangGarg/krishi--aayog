@@ -15,7 +15,7 @@ const Services = () => {
 
       {/* CARD components */}
       <div className="flex justify-center sm:justify-between flex-wrap gap-8 text-slate-50">
-        <div className="card w-60 bg-base-200 shadow-xl cursor-pointer">
+        <div className="card w-60 bg-slate-900 shadow-xl cursor-pointer">
           <figure className="px-10 pt-10">
             <img src={detail} alt="Shoes" className="rounded-xl " />
           </figure>
@@ -25,7 +25,7 @@ const Services = () => {
         </div>
 
         {/* 2.STATS AND DATA  */}
-        <div className="card w-60 bg-base-200 shadow-xl cursor-pointer">
+        <div className="card w-60 bg-slate-900 shadow-xl cursor-pointer">
           <figure className="px-10 pt-10">
             <img src={stats} alt="Shoes" className="rounded-xl" />
           </figure>
@@ -35,7 +35,7 @@ const Services = () => {
         </div>
 
         {/* 3.STRATAGY AND CONNTENT */}
-        <div className="card w-60 bg-base-200 shadow-xl cursor-pointer">
+        <div className="card w-60 bg-slate-900 shadow-xl cursor-pointer">
           <figure className="px-10 pt-10">
             <img src={strategy} alt="Shoes" className="rounded-xl" />
           </figure>
@@ -46,7 +46,7 @@ const Services = () => {
 
         {/* 4.GLOBAL MARKET */}
 
-        <div className="card w-60 bg-base-200 shadow-xl cursor-pointer">
+        <div className="card w-60 bg-slate-900 shadow-xl cursor-pointer">
           <figure className="px-10 pt-10">
             <img src={global} alt="Shoes" className="rounded-xl" />
           </figure>

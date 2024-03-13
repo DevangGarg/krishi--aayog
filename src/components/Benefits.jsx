@@ -5,7 +5,7 @@ import React from "react";
 const Benefits = () => {
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200 md:p-20">
+      <div className="hero min-h-screen bg-slate-900 md:p-20">
         <div className="hero-content justify-around flex-col lg:flex-row">
           <div className="flex flex-col bg-[#204E51] p-4 sm:p-12 rounded-lg sm:w-1/2 gap-4 text-slate-50">
             {/* 1.  experience */}

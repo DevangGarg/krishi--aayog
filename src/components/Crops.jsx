@@ -6,11 +6,11 @@ import rice from "../assets/rice.jpeg";
 import sugarcane from "../assets/sugarcane.jpg";
 import pulses from "../assets/pulses.webp";
 import { Carousel } from "react-bootstrap";
-import Vid1 from '../videos/video1.mp4';
-import Vid2 from '../videos/video2.mp4';
-import Vid3 from '../videos/video3.mp4';
-import Vid4 from '../videos/video4.mp4';
-import Vid5 from '../videos/video5.mp4';
+import Vid1 from '../assets/videos/video1.mp4';
+import Vid2 from '../assets/videos/video2.mp4';
+import Vid3 from '../assets/videos/video3.mp4';
+import Vid4 from '../assets/videos/video4.mp4';
+import Vid5 from '../assets/videos/video5.mp4';
 import "bootstrap/dist/css/bootstrap.css";
 import ReactPlayer from "react-player";
 import './Crops.css';
@@ -23,37 +23,37 @@ const Crops = () => {
     {
       id: 1,
       title: "Video 1",
-      src: Vid1,
+      src: 'https://youtu.be/FhiURLHI5oA?si=_tPnWtvLcxpmXOaM',
       credit: "Video of the farmer's feedback 1"
     },
     {
       id: 2,
       title: "Video 2",
-      src: Vid2,
+      src: 'https://youtu.be/taQLycO4zfw?si=DwYU0PjGlj5T8MNB',
       credit: "Video of the farmer's feedback 2"
     },
     {
       id: 3,
       title: "Video 3",
-      src: Vid3,
+      src: 'https://youtu.be/C1za2978pvg?si=RBilMPempqcECSyU',
       credit: "Video of the farmer's feedback 3"
     },
     {
       id: 4,
       title: "Video 4",
-      src: Vid4,
+      src: 'https://youtu.be/xF32eRdIkqg?si=_HYIdYXfsnjeTgio',
       credit: "Video of the farmer's feedback 4"
     },
     {
       id: 5,
       title: "Video 5",
-      src: Vid5,
+      src: 'https://youtube.com/shorts/-dbyJGMpZ6k?si=n-3OALJxLOIWinBx',
       credit: "Video of the farmer's feedback 5"
     },
   ]
 
   return (
-    <div id="Friends" className="bg-base-200">
+    <div id="Friends" className="bg-slate-900">
       <h1 className=" text-center text-5xl font-bold mb-16 text-[#3eb6bf] pt-8">
         Our Friends - 13L+ Profits Arranged
       </h1>
@@ -68,6 +68,7 @@ const Crops = () => {
                 pip={true}
                 controls={true}
                 playing={false}
+                playsinline={true}
                />
             { //   <Carousel.Caption>
             //    <h3>{videoObj.title}</h3>
@@ -81,7 +82,7 @@ const Crops = () => {
       <img src={image2} className="w-80 rounded-lg " />
       </div>
       {/* PASSION SECTION  */}
-      <div className="hero min-h-screen bg-base-200 md:p-20">
+      <div className="hero min-h-screen bg-slate-900 md:p-20">
         <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={crop} className="w-80 rounded-lg " />
 
