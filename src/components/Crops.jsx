@@ -15,6 +15,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import ReactPlayer from "react-player";
 import './Crops.css';
 import crop from "../assets/logo images/logo3.jpeg";
+import image1 from "../assets/logo images/logo2.jpeg";
+import image2 from "../assets/logo images/logo4.jpeg";
 
 const Crops = () => {
   const videoProperties = [
@@ -55,6 +57,8 @@ const Crops = () => {
       <h1 className=" text-center text-5xl font-bold mb-16 text-[#3eb6bf] pt-8">
         Our Friends - 13L+ Profits Arranged
       </h1>
+      <div className="hero-content flex-col lg:flex-row-reverse">
+      <img src={image1} className="w-80 rounded-lg " />
       <Carousel interval={null}>
         {videoProperties.map((videoObj) => {
           return (
@@ -74,6 +78,8 @@ const Crops = () => {
           )
         })}
       </Carousel>
+      <img src={image2} className="w-80 rounded-lg " />
+      </div>
       {/* PASSION SECTION  */}
       <div className="hero min-h-screen bg-base-200 md:p-20">
         <div className="hero-content flex-col lg:flex-row-reverse">
