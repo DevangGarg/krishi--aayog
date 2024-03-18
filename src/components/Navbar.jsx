@@ -13,6 +13,9 @@ const Navbar = () => {
             <img src={logo} className="w-12 h-12" />
           </a>
         </div>
+        <div className="text-white min-[320px]:mt-10">
+          For any futher queries, you can contact on +918770013937
+        </div>
         <div className="hidden  sm:block">
           <ul className="menu text-white  sm:menu-horizontal rounded-box">
             <li>

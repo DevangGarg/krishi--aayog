@@ -32,18 +32,18 @@ import './Home.css';
 
 
 const vegetables = {
-  1 : ['garlic','ginger','Taro','Lady Finger','ridge guard'],
-  2 : ['garlic','ginger','Taro','indian squash','ridge guard'],
-  3 : ['garlic','ginger','Taro','indian squash','ridge guard'],
-  4 : ['garlic','ginger','Taro','green chilli','capsicum'],
-  5 : ['garlic','ginger','Taro','green chilli','capsicum'],
-  6 : ['peas','ginger','Taro','green chilli','capsicum'],
-  7 : ['peas','ginger','Taro','tomato','green chilli'],
-  8 : ['garlic','ginger','peas','tomato','green chilli'],
-  9 : ['garlic','ginger','peas','tomato','green chilli'],
-  10 : ['garlic','ginger','peas','potato','indian squash'],
-  11 : ['garlic','ginger','Taro','peas','potato'],
-  12 : ['garlic','ginger','Taro','peas','indian squash']
+  1 : ['लहसुन','अदरक','अरबी','भिंडी','तोरई'],
+  2 : ['लहसुन','अदरक','अरबी','टिंडा','तोरई'],
+  3 : ['लहसुन','अदरक','अरबी','टिंडा','तोरई'],
+  4 : ['लहसुन','अदरक','अरबी','हरी मिर्च','शिमला मिर्च'],
+  5 : ['लहसुन','अदरक','अरबी','हरी मिर्च','शिमला मिर्च'],
+  6 : ['मटर','अदरक','अरबी','हरी मिर्च','शिमला मिर्च'],
+  7 : ['मटर','अदरक','अरबी','टमाटर','हरी मिर्च'],
+  8 : ['लहसुन','अदरक','मटर','टमाटर','हरी मिर्च'],
+  9 : ['लहसुन','अदरक','मटर','टमाटर','हरी मिर्च'],
+  10 : ['लहसुन','अदरक','मटर','आलू','टिंडा'],
+  11 : ['लहसुन','अदरक','अरबी','मटर','आलू'],
+  12 : ['लहसुन','अदरक','अरबी','मटर','टिंडा']
 }
 
 function randomIntFromInterval(min, max) { // min and max included 
@@ -52,12 +52,13 @@ function randomIntFromInterval(min, max) { // min and max included
 
 const num = randomIntFromInterval(1,12)
 
-const random = vegetables[num][Math.floor(Math.random() * vegetables[num].length)]
+// const random = vegetables[num][Math.floor(Math.random() * vegetables[num].length)]
+const random = vegetables[num];
 
 const steps = [
   {
     id: "0",
-    message: "Welcome to Krashilabh: Maximizing profits through AI-driven farming guidance on what, when, and how to grow for success!",
+    message: "कृशिलाभ में आपका स्वागत है: सफलता के लिए क्या, कब और कैसे उगाना है, एआई-संचालित कृषि मार्गदर्शन के माध्यम से मुनाफा अधिकतम करना!",
 
     // This calls the next id
     // i.e. id 1 in this case
@@ -68,7 +69,7 @@ const steps = [
 
     // This message appears in
     // the bot chat bubble
-    message: "Ready to elevate your farming? Please choose an option to proceed:",
+    message: "क्या आप अपनी खेती को उन्नत करने के लिए तैयार हैं? कृपया आगे बढ़ने के लिए एक विकल्प चुनें:",
     trigger: "2",
   },
   // {
@@ -90,257 +91,257 @@ const steps = [
       // When we need to show a number of
       // options to choose we create alist
       // like this
-      { value: 1, label: "Discover what to start growing now for maximum profit.", trigger: '3' },
-      { value: 2, label: "Get detailed information about a specific crop.", trigger: '4' },
+      { value: 1, label: "जानें कि अधिकतम लाभ के लिए अभी क्या उगाना शुरू करें।", trigger: '3' },
+      { value: 2, label: "किसी विशिष्ट फसल के बारे में विस्तृत जानकारी प्राप्त करें।", trigger: '4' },
     ],
   },
   {
     id: '3',
     component: (
-      <h1>The most suitable crop to grow is: {random}</h1>
+      <div>उगाने के लिए सबसे उपयुक्त फसल है: {random.map(r => <h1 key={r}>{r}</h1>)} </div>
     ),
     trigger: '5',
   },
   {
     id: '4',
     options: [
-      { value: 1, label: 'Potato', trigger: 'potato'},
-      { value: 2, label: 'Onion', trigger: 'onion'},
-      { value: 3, label: 'Tomato', trigger: 'tomato'},
-      { value: 4, label: 'Carrot', trigger: 'carrot'},
-      { value: 5, label: 'Brinjal', trigger: 'brinjal'},
-      { value: 6, label: 'Garlic', trigger: 'garlic'},
-      { value: 7, label: 'Ginger', trigger: 'ginger'},
-      { value: 8, label: 'Green Chilli', trigger: 'green'},
-      { value: 9, label: 'Bottle Gourd', trigger: 'bottle'},
-      { value: 10, label: 'Ridge Gourd', trigger: 'ridge'},
-      { value: 11, label: 'Pumpkin', trigger: 'pumpkin'},
-      { value: 12, label: 'Peas', trigger: 'peas'},
-      { value: 13, label: 'Lady finger', trigger: 'lady'},
-      { value: 14, label: 'Capsicum', trigger: 'capsicum'},
-      { value: 15, label: 'Spinach', trigger: 'spinach'},
-      { value: 16, label: 'Radish', trigger: 'radish'},
-      { value: 17, label: 'Sweet Potato', trigger: 'sweet'},
-      { value: 18, label: 'Taro', trigger: 'taro'},
-      { value: 19, label: 'Turnip', trigger: 'turnip'},
-      { value: 20, label: 'Indian Squash', trigger: 'indian'},
+      { value: 1, label: 'आलू', trigger: 'आलू'},
+      { value: 2, label: 'प्याज', trigger: 'प्याज'},
+      { value: 3, label: 'टमाटर', trigger: 'टमाटर'},
+      { value: 4, label: 'गाजर', trigger: 'गाजर'},
+      { value: 5, label: 'बैंगन', trigger: 'बैंगन'},
+      { value: 6, label: 'लहसुन', trigger: 'लहसुन'},
+      { value: 7, label: 'अदरक', trigger: 'अदरक'},
+      { value: 8, label: 'हरी मिर्च', trigger: 'हरी मिर्च'},
+      { value: 9, label: 'लौकी', trigger: 'लौकी'},
+      { value: 10, label: 'तोरई', trigger: 'तोरई'},
+      { value: 11, label: 'कद्दू', trigger: 'कद्दू'},
+      { value: 12, label: 'मटर', trigger: 'मटर'},
+      { value: 13, label: 'भिंडी', trigger: 'भिंडी'},
+      { value: 14, label: 'शिमला मिर्च', trigger: 'शिमला मिर्च'},
+      { value: 15, label: 'पालक', trigger: 'पालक'},
+      { value: 16, label: 'मूली', trigger: 'मूली'},
+      { value: 17, label: 'शकरकंद', trigger: 'शकरकंद'},
+      { value: 18, label: 'अरबी', trigger: 'अरबी'},
+      { value: 19, label: 'शलजम', trigger: 'शलजम'},
+      { value: 20, label: 'टिंडा', trigger: 'टिंडा'},
     ]
   },
   {
-    id: 'potato',
+    id: 'आलू',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image13} style={{height: '180px', width: '280px'}} alt="potato" />
-        <h1>Best profit months: November, October, September, December, August. Temperature range: 10°C-25°C. Growth period: 70-120 days.</h1>
+        <img src={Image13} style={{height: '180px', width: '280px'}} alt="आलू" />
+        <h1>सर्वोत्तम लाभ वाले महीने: नवंबर, अक्टूबर, सितंबर, दिसंबर, अगस्त। तापमान: 10°C-25°C। विकास काल: 70-120 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'onion',
+    id: 'प्याज',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image11} style={{height: '180px', width: '280px'}} alt="onion" />
-        <h1>Best profit months: November, December, September, October, August. Temperature range: 13°C-25°C. Growth period: 100-175 days.</h1>
+        <img src={Image11} style={{height: '180px', width: '280px'}} alt="प्याज" />
+        <h1>सर्वोत्तम लाभ वाले महीने: नवंबर, दिसंबर, सितंबर, अक्टूबर, अगस्त। तापमान: 13°C-25°C। विकास काल: 100-175 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'tomato',
+    id: 'टमाटर',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image20} style={{height: '180px', width: '280px'}} alt="tomato" />
-        <h1>Best profit months: September, August, July, October, June. Temperature range: 18°C-25°C. Growth period: 60-80 days.</h1>
+        <img src={Image20} style={{height: '180px', width: '280px'}} alt="टमाटर" />
+        <h1>सर्वोत्तम लाभ वाले महीने: सितंबर, अगस्त, जुलाई, अक्टूबर, जून। तापमान: 18°C-25°C। विकास काल: 60-80 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'carrot',
+    id: 'गाजर',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image5} style={{height: '180px', width: '280px'}} alt="carrot" />
-        <h1>Best profit months: September, October, August, July, June. Temperature range: 10°C-25°C. Growth period: 50-80 days.</h1>
+        <img src={Image5} style={{height: '180px', width: '280px'}} alt="गाजर" />
+        <h1>सर्वोत्तम लाभ वाले महीने: सितंबर, अक्टूबर, अगस्त, जुलाई, जून। तापमान: 10°C-25°C। विकास काल: 50-80 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'brinjal',
+    id: 'बैंगन',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image3} style={{height: '180px', width: '280px'}} alt="brinjal" />
-        <h1>Best profit months: June, July, August, May, September. Temperature range: 25°C-30°C. Growth period: 100-150 days.</h1>
+        <img src={Image3} style={{height: '180px', width: '280px'}} alt="बैंगन" />
+        <h1>सर्वोत्तम लाभ वाले महीने: जून, जुलाई, अगस्त, मई, सितंबर। तापमान: 25°C-30°C। विकास काल: 100-150 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'garlic',
+    id: 'लहसुन',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image6} style={{height: '180px', width: '280px'}} alt="garlic" />
-        <h1>Best profit months: January, February, December, March, October. Temperature range: 0°C-30°C. Growth period: 120-150 days.</h1>
+        <img src={Image6} style={{height: '180px', width: '280px'}} alt="लहसुन" />
+        <h1>सर्वोत्तम लाभ वाले महीने: जनवरी, फरवरी, दिसंबर, मार्च, अक्टूबर। तापमान: 0°C-30°C। विकास काल: 120-150 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'ginger',
+    id: 'अदरक',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image7} style={{height: '180px', width: '280px'}} alt="ginger" />
-        <h1>Best profit months: November, December, September, January, August. Temperature range: 20°C-25°C. Growth period: 180-240 days.</h1>
+        <img src={Image7} style={{height: '180px', width: '280px'}} alt="अदरक" />
+        <h1>सर्वोत्तम लाभ वाले महीने: नवंबर, दिसंबर, सितंबर, जनवरी, अगस्त। तापमान: 20°C-25°C। विकास काल: 180-240 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'green',
+    id: 'हरी मिर्च',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image8} style={{height: '180px', width: '280px'}} alt="green" />
-        <h1>Best profit months: August, July, September, June, May. Temperature range: 20°C-30°C. Growth period: 60-90 days.</h1>
+        <img src={Image8} style={{height: '180px', width: '280px'}} alt="हरी मिर्च" />
+        <h1>सर्वोत्तम लाभ वाले महीने: अगस्त, जुलाई, सितंबर, जून, मई। तापमान: 20°C-30°C। विकास काल: 60-90 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'bottle',
+    id: 'लौकी',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image1} style={{height: '180px', width: '280px'}} alt="bottle" />
-        <h1>Best profit months: May, September, April, June, November. Temperature range: 18°C-30°C. Growth period: 90-120 days.</h1>
+        <img src={Image1} style={{height: '180px', width: '280px'}} alt="लौकी" />
+        <h1>सर्वोत्तम लाभ वाले महीने: मई, सितंबर, अप्रैल, जून, नवंबर। तापमान: 18°C-30°C। विकास काल: 90-120 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'ridge',
+    id: 'तोरई',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image16} style={{height: '180px', width: '280px'}} alt="ridge" />
-        <h1>Best profit months: December, February, January, November, March. Temperature range: 20°C-30°C. Growth period: 60-90 days.</h1>
+        <img src={Image16} style={{height: '180px', width: '280px'}} alt="तोरई" />
+        <h1>सर्वोत्तम लाभ वाले महीने: दिसंबर, फरवरी, जनवरी, नवंबर, मार्च। तापमान: 20°C-30°C। विकास काल: 60-90 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'pumpkin',
+    id: 'कद्दू',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image14} style={{height: '180px', width: '280px'}} alt="pumpkin" />
-        <h1>Best profit months: July, June, May, April, March. Temperature range: 18°C-27°C. Growth period: 90-120 days.</h1>
+        <img src={Image14} style={{height: '180px', width: '280px'}} alt="कद्दू" />
+        <h1>सर्वोत्तम लाभ वाले महीने: जुलाई, जून, मई, अप्रैल, मार्च। तापमान: 18°C-27°C। विकास काल: 90-120 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'peas',
+    id: 'मटर',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image12} style={{height: '180px', width: '280px'}} alt="peas" />
-        <h1>Best profit months: November, October, September, December, August. Temperature range: 13°C-18°C. Growth period: 60-90 days.</h1>
+        <img src={Image12} style={{height: '180px', width: '280px'}} alt="मटर" />
+        <h1>सर्वोत्तम लाभ वाले महीने: नवंबर, अक्टूबर, सितंबर, दिसंबर, अगस्त। तापमान: 13°C-18°C। विकास काल: 60-90 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'indian',
+    id: 'टिंडा',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image9} style={{height: '180px', width: '280px'}} alt="indian" />
-        <h1>Best profit months: December, November, October, March, February. Temperature range: 25°C-30°C. Growth period: 70-90 days.</h1>
+        <img src={Image9} style={{height: '180px', width: '280px'}} alt="टिंडा" />
+        <h1>सर्वोत्तम लाभ वाले महीने: दिसंबर, नवंबर, अक्टूबर, मार्च, फरवरी। तापमान: 25°C-30°C। विकास काल: 70-90 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'lady',
+    id: 'भिंडी',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image10} style={{height: '180px', width: '280px'}} alt="lady" />
-        <h1>Best profit months: December, November, January, February, March. Temperature range: 22°C-35°C. Growth period: 50-65 days.</h1>
+        <img src={Image10} style={{height: '180px', width: '280px'}} alt="भिंडी" />
+        <h1>दिसंबर, नवंबर, जनवरी, फरवरी, मार्च। तापमान: 22°C-35°C। विकास काल: 50-65 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'capsicum',
+    id: 'शिमला मिर्च',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image4} style={{height: '180px', width: '280px'}} alt="capsicum" />
-        <h1>Best profit months: May, June, October, July, September. Temperature range: 20°C-25°C. Growth period: 60-90 days.</h1>
+        <img src={Image4} style={{height: '180px', width: '280px'}} alt="शिमला मिर्च" />
+        <h1>सर्वोत्तम लाभ वाले महीने: मई, जून, अक्टूबर, जुलाई, सितंबर। तापमान: 20°C-25°C। विकास काल: 60-90 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'spinach',
+    id: 'पालक',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image17} style={{height: '180px', width: '280px'}} alt="spinach" />
-        <h1>Best profit months: August, July, June, May, September. Temperature range: 10°C-24°C. Growth period: 45-60 days.</h1>
+        <img src={Image17} style={{height: '180px', width: '280px'}} alt="पालक" />
+        <h1>सर्वोत्तम लाभ वाले महीने: अगस्त, जुलाई, जून, मई, सितंबर। तापमान: 10°C-24°C। विकास काल: 45-60 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'radish',
+    id: 'मूली',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image15} style={{height: '180px', width: '280px'}} alt="radish" />
-        <h1>Best profit months: June, July, August, May, September. Temperature range: 10°C-18°C. Growth period: 30-60 days.</h1>
+        <img src={Image15} style={{height: '180px', width: '280px'}} alt="मूली" />
+        <h1>सर्वोत्तम लाभ वाले महीने: जून, जुलाई, अगस्त, मई, सितंबर। तापमान: 10°C-18°C। विकास काल: 30-60 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'sweet',
+    id: 'शकरकंद',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image18} style={{height: '180px', width: '280px'}} alt="sweet" />
-        <h1>Best profit months: August, September, July, June, October. Temperature range: 24°C-26°C. Growth period: 100-140 days.</h1>
+        <img src={Image18} style={{height: '180px', width: '280px'}} alt="शकरकंद" />
+        <h1>सर्वोत्तम लाभ वाले महीने: अगस्त, सितंबर, जुलाई, जून, अक्टूबर। तापमान: 24°C-26°C। विकास काल: 100-140 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'taro',
+    id: 'अरबी',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image19} style={{height: '180px', width: '280px'}} alt="taro" />
-        <h1>Best profit months: January, February, March, December, November. Temperature range: 21°C-35°C. Growth period: 200-240 days.</h1>
+        <img src={Image19} style={{height: '180px', width: '280px'}} alt="अरबी" />
+        <h1>सर्वोत्तम लाभ वाले महीने: जनवरी, फरवरी, मार्च, दिसंबर, नवंबर। तापमान: 21°C-35°C। विकास काल: 200-240 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
-    id: 'turnip',
+    id: 'शलजम',
     component: (
       <div style={{ display: 'flex', flexDirection: 'column'}}>
-        <img src={Image21} style={{height: '180px', width: '280px'}} alt="turnip" />
-        <h1> Best profit months: September, June, July, April, May. Temperature range: 10°C-20°C. Growth period: 30-60 days.</h1>
+        <img src={Image21} style={{height: '180px', width: '280px'}} alt="शलजम" />
+        <h1> सर्वोत्तम लाभ वाले महीने: सितंबर, जून, जुलाई, अप्रैल, मई। तापमान: 10°C-20°C। विकास काल: 30-60 दिन।</h1>
       </div>
     ),
     trigger: '5',
   },
   {
     id: '5',
-    message: 'Would you like to continue the chat?',
+    message: 'क्या आप बात करना जारी रखना चाहेंगे?',
     trigger: '6'
   },
   {
     id: '6',
     options: [
-      { value: 1, label: 'Yes', trigger: '2'},
-      { value: 2, label: 'No', trigger: '7'}
+      { value: 1, label: 'हाँ', trigger: '2'},
+      { value: 2, label: 'नहीं', trigger: '7'}
     ],
   },
   {
     id: '7',
-    message: 'Thank You for having the chat. Want to know more, please whatsapp on +918770013937,we will contact you in 16 hours.',
+    message: 'बातचीत करने के लिए धन्यवाद. अधिक जानना चाहते हैं, तो कृपया +918770013937 पर व्हाट्सएप करें, हम 16 घंटे में आपसे संपर्क करेंगे।',
     end: true,
   }
 ];
