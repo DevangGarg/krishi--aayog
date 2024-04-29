@@ -69,7 +69,7 @@ const Benefits = () => {
               </svg>
 
               <div>
-                <h1 className=" font-bold text-3xl">13L+</h1>
+                <h1 className=" font-bold text-3xl">16.5L+</h1>
                 <p className=" text-xs font-light">Profits Arranged</p>
               </div>
             </div>

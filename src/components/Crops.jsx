@@ -55,7 +55,7 @@ const Crops = () => {
   return (
     <div id="Friends" className="bg-slate-900">
       <h1 className=" text-center text-5xl font-bold mb-16 text-[#3eb6bf] pt-8">
-        Our Friends - 13L+ Profits Arranged
+        Our Friends - 16.5L+ Profits Arranged
       </h1>
       <div className="hero-content flex-col lg:flex-row-reverse">
       <img src={image1} className="w-80 rounded-lg " />
